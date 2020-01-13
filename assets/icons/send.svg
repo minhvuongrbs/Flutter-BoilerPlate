@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>send</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ui" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="style-guide-line" transform="translate(-633.000000, -402.000000)" stroke="#4A4A4A">
+            <g id="send" transform="translate(639.000000, 412.000000) rotate(45.000000) translate(-639.000000, -412.000000) translate(629.000000, 402.000000)">
+                <line x1="20" y1="0" x2="9" y2="11" id="Path"></line>
+                <polygon id="Path" points="20 0 13 20 9 11 0 7"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

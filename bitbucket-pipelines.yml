@@ -1,0 +1,31 @@
+image: duclinhclc/flutter-image:latest
+
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          caches:
+            - gradle
+            - gradlewrapper
+            - flutter
+          deployment: test
+          script:
+            - echo "Show the configuration"
+            - flutter doctor -v
+            - echo "Running flutter analyze with linting rules"
+            - flutter analyze
+            - echo "Only on pull request"
+            - echo "Building release APK..."
+            - flutter -v build apk
+            #            - SLACK_TOKEN=xoxp-9185264976-714396107671-858766597156-207b1c4d8948f2b060763c11c8928504
+            - SLACK_CHANEL=jenkins
+            - BRANCH_SLUG="   ${BITBUCKET_BRANCH//\//-}"
+            - FILE_NAME="$BITBUCKET_REPO_SLUG$BRANCH_SLUG.apk"
+            - cp build/app/outputs/apk/release/app-release.apk "build/app/outputs/apk/release/$FILE_NAME"
+            - curl -F file=@"build/app/outputs/apk/release/$FILE_NAME" -F channels=${SLACK_CHANEL} -F token=${SLACK_TOKEN} https://slack.com/api/files.upload
+          artifacts:
+            - build/app/outputs/apk/release/app-release.apk
+definitions:
+  caches:
+    gradlewrapper: ~/.gradle/wrapper
+    flutter: /opt/flutter

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="23px" viewBox="0 0 20 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>home</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ui" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="tab-bar" transform="translate(-120.000000, -225.000000)" stroke-width="2">
+            <g id="home" transform="translate(121.000000, 226.000000)">
+                <polyline id="Path-18" stroke="#0237CF" points="2.25013733 20.25 0 20.25 0 7.875 9 0.268890381 18 7.875 18 20.25 15.759201 20.25"></polyline>
+                <path d="M5.625,20.25 L5.625,15.7489791 C5.625,13.8855819 7.13983176,12.375 9,12.375 L9,12.375 C10.863961,12.375 12.375,13.8933792 12.375,15.7489791 L12.375,20.25" id="Path-18" stroke="#A1AFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

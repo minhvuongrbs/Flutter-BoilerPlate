@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>gift</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ui" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="style-guide-line" transform="translate(-740.000000, -350.000000)" stroke="#4A4A4A">
+            <g id="gift" transform="translate(741.000000, 351.000000)">
+                <polyline id="Path" points="18 10 18 20 2 20 2 10"></polyline>
+                <rect id="Rectangle" x="0" y="5" width="20" height="5"></rect>
+                <line x1="10" y1="20" x2="10" y2="5" id="Path"></line>
+                <path d="M10,5 L5.5,5 C4.11928813,5 3,3.88071187 3,2.5 C3,1.11928813 4.11928813,8.8817842e-16 5.5,8.8817842e-16 C9,8.8817842e-16 10,5 10,5 Z" id="Path"></path>
+                <path d="M10,5 L14.5,5 C15.8807119,5 17,3.88071187 17,2.5 C17,1.11928813 15.8807119,8.8817842e-16 14.5,8.8817842e-16 C11,8.8817842e-16 10,5 10,5 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
