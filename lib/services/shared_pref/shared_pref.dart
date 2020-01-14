@@ -12,4 +12,7 @@ class SharedPref {
   static Future init() async {
     _sharedPref = await SharedPreferences.getInstance();
   }
+  static Future clear()async{
+    _sharedPref.clear();
+  }
 }
