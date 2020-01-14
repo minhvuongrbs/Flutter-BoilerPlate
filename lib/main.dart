@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
@@ -49,6 +51,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     debugPaintSizeEnabled = false;
+    final FirebaseAnalytics analytics = FirebaseAnalytics();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       localizationsDelegates: [S.delegate],
@@ -57,6 +60,7 @@ class MyApp extends StatelessWidget {
       theme: themeData,
       routes: Routes.routes,
       home: HomePage(),
+      navigatorObservers: [FirebaseAnalyticsObserver(analytics: analytics)],
     );
   }
 }

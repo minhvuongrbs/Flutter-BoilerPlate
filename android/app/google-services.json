@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "3739358581",
+    "firebase_url": "https://gamerdual-495e1.firebaseio.com",
+    "project_id": "gamerdual-495e1",
+    "storage_bucket": "gamerdual-495e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3739358581:android:2a44dbf4bc3ec88406ef3c",
+        "android_client_info": {
+          "package_name": "com.ylinkee.gamerdual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3739358581-htdt7f807tjmv2v1k42brn2j1pikfe0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxMxSm2Z53IAA9IXxtkeo33F_TpLcjjPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3739358581-htdt7f807tjmv2v1k42brn2j1pikfe0q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "3739358581-gkpdad3blbqrsbcb777uhnri0u44h7v4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ylinkee.gamerdual"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
