@@ -1,4 +1,4 @@
-# Gamer Dual mobile using Flutter
+# Flutter boilerplate
 
 ## Getting Started
 
@@ -104,23 +104,25 @@ Dive into the lib folder has the main code for the application
 10- generated - Contains the whole setup and configure for localization
 ```
 
-## API guidelines
+## Exciting feature
 
-- Document can about API [can be found at here](https://documenter.getpostman.com/view/7080328/SWLiZR8F?version=latest)
-
-## Design guidelines
-
-- Please find the relevant [design at here](https://app.zeplin.io/project/5e1c15ebd7b0b9ac7bb9cdd4)
+```
+- State management: Provider 3.1.0
+- Http handler: Dio library
+- Multilanguage: I18n follow [this article](https://dev.to/pedromassango/how-to-i18n-in-flutter-46km)
+- Dart linter
+- Integrate CI/CD progress
+- Error reporting management: For more info consider reading this full [example](https://gist.github.com/slightfoot/094657bb22e986bbb4c9bafd9841cbd8) by Simon Lightfoot
+- Flutter Util: Library for adapting screen and font size
+- Re configure Shared Preference to use any time synchronous
+```
 
 ## Error reporting management
-
-- Check the bug reporting [at here](https://sentry.io/organizations/ylinkee/issues/)
-- Ask for permission from Mr.Tony Nguyen
-- For more info consider reading this full [example](https://gist.github.com/slightfoot/094657bb22e986bbb4c9bafd9841cbd8) by Simon Lightfoot
 
 ## State Management
 
 [Simple app state management](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple)
+
 
 ## Style guide
 
@@ -129,10 +131,7 @@ Dive into the lib folder has the main code for the application
 - [Style guide from Flutter team](https://github.com/flutter/flutter/wiki/Style-guide-for-Flutter-repo#introduction)
 - [Effective Dart from Dart team](https://dart.dev/guides/language/effective-dart)
 
-```
-- Require to use Screen Util when the size is larger than 10.0 points, [for more information](https://pub.dev/packages/flutter_screenutil)
 
-```
 ## Parsing json to model
 
 There are two ways to solve that:
@@ -157,7 +156,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Contribution guidelines
 
-1. Create branch with folder name and Jira ticket,depend on what kind of task, might create: feature/GMD-148 or hotfix/GMD-149,etc,..
+1. Create branch with folder name and Jira ticket,depend on what kind of task, might create: feature/FBL-148 or hotfix/FBL-149,etc,..
 2. Push the branch to remote and pull request to develop branch
 3. Considering the comments, rebase and push again
 4. Merge branch or wait to be merged into master
