@@ -1,4 +1,4 @@
-# gamerdual_flutter
+# Flutter boilerplate
 
 A new Flutter project.
 
