@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="23px" viewBox="0 0 18 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>notification</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ui" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tab-bar" transform="translate(-298.000000, -225.000000)">
+            <g id="notification" transform="translate(299.000000, 225.000000)">
+                <path d="M8,22.8571429 C9.25714286,22.8571429 10.2857143,21.8285714 10.2857143,20.5714286 L5.71428571,20.5714286 C5.71428571,21.8285714 6.74285714,22.8571429 8,22.8571429 L8,22.8571429 Z" id="Path" fill="#A1AFFF"></path>
+                <line x1="0" y1="18.2857143" x2="16" y2="18.2857143" id="Line" stroke="#0237CF" stroke-width="2" stroke-linecap="round"></line>
+                <path d="M2.28571429,14.8571429 L2.28571429,9.15147898 C2.28571429,5.99080441 4.85050879,3.42857143 8,3.42857143 C11.1559129,3.42857143 13.7142857,5.98260534 13.7142857,9.15147898 L13.7142857,14.8571429" id="Rectangle-93" stroke="#0237CF" stroke-width="2" stroke-linecap="round"></path>
+                <rect id="Rectangle-4" fill="#0237CF" x="6.85714286" y="0" width="2.28571429" height="3.42857143" rx="1.14285714"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

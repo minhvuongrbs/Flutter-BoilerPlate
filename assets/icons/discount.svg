@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="51px" viewBox="0 0 51 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ui" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="style-guide-line" transform="translate(-775.000000, -553.000000)">
+            <g id="Group-2" transform="translate(776.000000, 554.000000)">
+                <path d="M24.5,49 C38.0309764,49 49,38.0309764 49,24.5 C49,10.9690236 38.0309764,0 24.5,0 C10.9690236,0 0,10.9690236 0,24.5 C0,38.0309764 10.9690236,49 24.5,49 Z" id="Oval-Copy" stroke="#FF880E" stroke-dasharray="3"></path>
+                <text id="-20%-copy" transform="translate(25.000000, 25.000000) rotate(-10.000000) translate(-25.000000, -25.000000) " font-family="Muli-Regular, Muli" font-size="14" font-weight="normal" fill="#FF880E">
+                    <tspan x="7" y="30">-20%</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
