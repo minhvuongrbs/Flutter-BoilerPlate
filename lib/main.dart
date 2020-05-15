@@ -8,13 +8,13 @@ import 'package:flutter_boilerplate/routes.dart';
 import 'package:flutter_boilerplate/services/locator.dart';
 import 'package:flutter_boilerplate/services/shared_pref/shared_pref.dart';
 import 'package:flutter_boilerplate/utils/error_capture.dart';
-import 'package:intl/date_symbol_data_local.dart';
+import 'package:flutter_boilerplate/utils/translatesDelegate.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:sentry/sentry.dart';
 
 import 'constants/app_theme.dart';
 import 'constants/strings.dart';
-import 'generated/i18n.dart';
 
 final SentryClient _sentry = SentryClient(dsn: Strings.dnsSentry);
 
@@ -29,7 +29,6 @@ List<Future> systemChromeTasks = [
 main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SharedPref.init();
-  await initializeDateFormatting();
   await Future.wait(systemChromeTasks);
   setupLocator();
   runZonedGuarded(() {
@@ -52,12 +51,30 @@ class MyApp extends StatelessWidget {
     debugPaintSizeEnabled = false;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      localizationsDelegates: [S.delegate],
-      supportedLocales: S.delegate.supportedLocales,
       title: Strings.appName,
       theme: themeData,
       routes: Routes.routes,
       home: HomePage(),
+      supportedLocales: [
+        const Locale('en'),
+        const Locale('vi'),
+      ],
+      localizationsDelegates: [
+        const TranslatesDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      localeResolutionCallback:
+          (Locale locale, Iterable<Locale> supportedLocales) {
+        if (locale != null) {
+          for (Locale supportedLocale in supportedLocales) {
+            if (supportedLocale.languageCode == locale.languageCode) {
+              return supportedLocale;
+            }
+          }
+        }
+        return supportedLocales.first;
+      },
     );
   }
 }

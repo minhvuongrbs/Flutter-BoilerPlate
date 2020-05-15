@@ -45,6 +45,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/langs/
 
   fonts:
     - family: Muli-Regular
