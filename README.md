@@ -23,8 +23,8 @@
 - Should use the specific version of Flutter, CocoaPods:
 
 ```
-1. Flutter: `v1.9.1+hotfix.6`, you can use the `flutter version` command
-  flutter version v1.9.1+hotfix.6
+1. Flutter: `v1.17.1`, you can use the `flutter version` command
+  flutter version v1.17.1
 2. CocoaPods: `1.7.5`, install by terminal: 
   sudo gem install cocoapods -v 1.7.5
 ```
@@ -67,7 +67,6 @@ new_life_flutter/
 |- assets
 |- build
 |- ios
-|- res/values
 |- test
 ```
 
@@ -76,7 +75,6 @@ Here is the folder structure we have been using in this project
 ```
 lib/
 |- constants/
-|- generated/
 |- models/
 |- providers/
 |- pages/
@@ -101,7 +99,6 @@ Dive into the lib folder has the main code for the application
 7- components — Contains the common widgets for the applications. For example, Button, TextField etc.
 8- routes.dart — This file contains all the routes for the application.
 9- main.dart - This is the starting point of the application. All the application level configurations are defined in this file i.e, theme, routes, title, orientation etc.
-10- generated - Contains the whole setup and configure for localization
 ```
 
 ## Exciting feature
@@ -140,6 +137,16 @@ There are two ways to solve that:
 - By running flutter pub run build_runner build in the project root
 2. Use easier way by a few website like [this](https://javiercbk.github.io/json_to_dart) or [another](https://app.quicktype.io/)
 
+
+## Multilanguage
+- Update new word in assets/langs/`languageCode`
+- Use this synctax to get content: Translates.trans('home_page')
+- If need to use argument: Translates.trans('today_is',args:{date: '16/05'})
+- Change language: 
+```
+SharedPref.sharedPref.setString(CONFIG_LANG, newLanguageCode);
+TranslatesDelegate().load(Locale(newLanguageCode));
+```
 
 ## Simple helps
 
