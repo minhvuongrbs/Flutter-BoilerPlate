@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gamerdual_flutter/components/common/app_loader.dart';
+import 'package:flutter_boilerplate/components/common/app_loader.dart';
 
 import '../constants/strings.dart';
 

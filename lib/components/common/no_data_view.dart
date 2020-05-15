@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gamerdual_flutter/constants/images.dart';
+
+import '../../constants/images.dart';
+
 
 class NoDataView extends StatelessWidget {
  final String noDataText;

@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:gamerdual_flutter/services/locator.dart';
-import 'package:gamerdual_flutter/services/network/api_service.dart';
+import 'package:flutter_boilerplate/services/locator.dart';
+
+import '../api_service.dart';
 
 class UserController {
   UserController() : apiClient = apiService.client;

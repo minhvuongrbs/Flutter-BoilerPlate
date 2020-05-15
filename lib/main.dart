@@ -4,12 +4,12 @@ import 'package:firebase_analytics/observer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-import 'package:gamerdual_flutter/pages/home/home_page.dart';
-import 'package:gamerdual_flutter/providers/base_provider.dart';
-import 'package:gamerdual_flutter/routes.dart';
-import 'package:gamerdual_flutter/services/locator.dart';
-import 'package:gamerdual_flutter/services/shared_pref/shared_pref.dart';
-import 'package:gamerdual_flutter/utils/error_capture.dart';
+import 'package:flutter_boilerplate/pages/home/home_page.dart';
+import 'package:flutter_boilerplate/providers/base_provider.dart';
+import 'package:flutter_boilerplate/routes.dart';
+import 'package:flutter_boilerplate/services/locator.dart';
+import 'package:flutter_boilerplate/services/shared_pref/shared_pref.dart';
+import 'package:flutter_boilerplate/utils/error_capture.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:provider/provider.dart';
 import 'package:sentry/sentry.dart';
@@ -33,7 +33,7 @@ main() async {
   await initializeDateFormatting();
   await Future.wait(systemChromeTasks);
   setupLocator();
-  runZoned<Future<void>>(() async {
+  runZonedGuarded<Future<void>>(() async {
     runApp(
       MultiProvider(
         providers: [
@@ -42,7 +42,7 @@ main() async {
         child: MyApp(),
       ),
     );
-  }, onError: (error, stackTrace) async {
+  }, (error, stackTrace) async {
     await reportError(_sentry, error, stackTrace);
   });
 }

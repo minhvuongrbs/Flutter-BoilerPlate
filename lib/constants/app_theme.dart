@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gamerdual_flutter/constants/app_font.dart';
-import 'package:gamerdual_flutter/constants/colors.dart';
+
+import 'app_font.dart';
+import 'colors.dart';
 
 final ThemeData themeData = ThemeData(
   primarySwatch: Colors.blue,

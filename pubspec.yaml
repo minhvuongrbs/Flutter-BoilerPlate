@@ -1,10 +1,10 @@
-name: gamerdual_flutter
+name: flutter_boilerplate
 description: A new Flutter project.
 
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.2.2 <3.0.0"
+  sdk: '>=2.2.2 <3.0.0'
 
 dependencies:
   flutter:
@@ -25,7 +25,7 @@ dependencies:
   system_info: ^0.1.1
   json_annotation: ^3.0.0
   flutter_svg: ^0.14.4
-  intl: ^0.15.8
+  intl: any
   expandable: ^3.0.1
   get_it: ^3.0.3
   firebase_core: ^0.4.0+9

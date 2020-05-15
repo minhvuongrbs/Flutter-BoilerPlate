@@ -1,4 +1,4 @@
-import 'package:gamerdual_flutter/services/network/api_service.dart';
+import 'package:flutter_boilerplate/services/network/api_service.dart';
 import 'package:get_it/get_it.dart';
 import 'network/api_controller/user_controller.dart';
 

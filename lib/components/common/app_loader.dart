@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gamerdual_flutter/constants/images.dart';
 
+import '../../constants/images.dart';
 class AppLoader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:gamerdual_flutter/services/shared_pref/shared_pref.dart';
+import 'package:flutter_boilerplate/services/shared_pref/shared_pref.dart';
 
 const BASE_URL = 'https://dev-api.timtour.vn/api/v1';
 

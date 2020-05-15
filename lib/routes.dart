@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:gamerdual_flutter/pages/home/home_page.dart';
+import 'package:flutter_boilerplate/pages/home/home_page.dart';
+
 
 class Routes {
   Routes._();
