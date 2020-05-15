@@ -4,11 +4,25 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          Center(child: Text('home page')),
-          IconButton(icon: Icon(Icons.change_history), onPressed: () {})
-        ],
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            Center(
+              child: Text(
+                'home page',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 40,
+                ),
+              ),
+            ),
+            FlatButton(
+              onPressed: () {},
+              child: Text('Change language'),
+              color: Colors.pinkAccent,
+            )
+          ],
+        ),
       ),
     );
   }

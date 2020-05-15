@@ -38,6 +38,7 @@ Future<Null> reportError(
 
   final Map<String, dynamic> extra = {};
   final Map<String, String> deviceInfo = {};
+
   try {
     final DeviceInfoPlugin deviceInfoPlugin = DeviceInfoPlugin();
     if (Platform.isAndroid) {

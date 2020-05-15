@@ -1,4 +1,4 @@
-package com.example.gamerdual_flutter
+package com.minhvuong.flutter_boilerplate
 
 import android.os.Bundle
 
