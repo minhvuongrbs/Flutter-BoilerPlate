@@ -8,7 +8,7 @@ import 'package:flutter_boilerplate/routes.dart';
 import 'package:flutter_boilerplate/services/locator.dart';
 import 'package:flutter_boilerplate/services/shared_pref/shared_pref.dart';
 import 'package:flutter_boilerplate/utils/error_capture.dart';
-import 'package:flutter_boilerplate/utils/translatesDelegate.dart';
+import 'package:flutter_boilerplate/utils/translation.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:sentry/sentry.dart';
@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
         const Locale('vi'),
       ],
       localizationsDelegates: [
-        const TranslatesDelegate(),
+        const TranslationsDelegate(),
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate
       ],

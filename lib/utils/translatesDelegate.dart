@@ -10,14 +10,7 @@ class TranslatesDelegate extends LocalizationsDelegate<Translates> {
   bool isSupported(Locale locale) => ['en', 'vi'].contains(locale.languageCode);
 
   @override
-  Future<Translates> load(Locale locale) async {
-    final Translates localizations = new Translates(locale);
-    await localizations.load();
-
-    debugPrint('Load ${locale.languageCode}');
-
-    return localizations;
-  }
+  Future<Translates> load(Locale locale) => Translates.load(locale);
 
   @override
   bool shouldReload(TranslatesDelegate old) => false;

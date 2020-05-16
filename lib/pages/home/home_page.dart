@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_boilerplate/routes.dart';
 import 'package:flutter_boilerplate/services/shared_pref/shared_pref.dart';
-import 'package:flutter_boilerplate/utils/translates.dart';
-import 'package:flutter_boilerplate/utils/translatesDelegate.dart';
+import 'package:flutter_boilerplate/utils/translation.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
           children: <Widget>[
             Center(
               child: Text(
-                Translates.trans('home_page'),
+                Translations.text('home_page'),
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 40,
@@ -22,16 +22,20 @@ class HomePage extends StatelessWidget {
             FlatButton(
               onPressed: () {
                 String newLanguageCode;
-                if (SharedPref.sharedPref.getString(CONFIG_LANG) == 'vi') {
+                if (Translations.trackingLanguage == 'vi') {
                   newLanguageCode = 'en';
                 } else
                   newLanguageCode = 'vi';
-
-                SharedPref.sharedPref.setString(CONFIG_LANG, newLanguageCode);
-                TranslatesDelegate().load(Locale(newLanguageCode));
+                print('new language: ' + newLanguageCode);
+                Translations.load(Locale(newLanguageCode));
+                Navigator.pushNamed(context, Routes.post_detail);
               },
-              child: Text('Change language'),
+              child: Text(Translations.text('change_language')),
               color: Colors.pinkAccent,
+            ),
+            Text(
+              'Current language: ' + Translations.trackingLanguage,
+              style: TextStyle(fontSize: 30),
             )
           ],
         ),
