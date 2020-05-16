@@ -1,5 +1,6 @@
 {
   "home_page": "Trang Chu",
   "post_detail_page": "Bai dang chi tiet",
-  "change_language": "Thay doi ngon ngu"
+  "change_language": "Thay doi ngon ngu",
+  "page_number": "Trang {pageNumber}"
 }

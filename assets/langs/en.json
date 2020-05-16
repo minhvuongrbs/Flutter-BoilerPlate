@@ -1,5 +1,6 @@
 {
   "home_page": "Home Page",
   "post_detail_page": "Post Detail Page",
-  "change_language": "Change language"
+  "change_language": "Change language",
+  "page_number": "page {pageNumber}"
 }

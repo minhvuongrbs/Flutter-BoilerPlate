@@ -24,6 +24,10 @@ class _PostDetailPageState extends State<PostDetailPage> {
             Text(
               'Current language: ' + Translations.trackingLanguage,
               style: TextStyle(fontSize: 30),
+            ),
+            Text(
+              Translations.text('page_number', args: {'pageNumber': '1'}),
+              style: TextStyle(fontSize: 30),
             )
           ],
         ),
