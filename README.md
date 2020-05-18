@@ -140,12 +140,11 @@ There are two ways to solve that:
 
 ## Multilanguage
 - Update new word in assets/langs/`languageCode`
-- Use this synctax to get content: Translates.trans('home_page')
-- If need to use argument: Translates.trans('today_is',args:{date: '16/05'})
+- Use this synctax to get content: Translations.text('home_page'),
+- If need to use argument: Translations.text('page_number', args: {'pageNumber': '1'})
 - Change language: 
 ```
-SharedPref.sharedPref.setString(CONFIG_LANG, newLanguageCode);
-TranslatesDelegate().load(Locale(newLanguageCode));
+Translations.load(Locale(newLanguageCode));
 ```
 
 ## Simple helps
