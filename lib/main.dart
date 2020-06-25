@@ -2,19 +2,21 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_boilerplate/pages/home/home_page.dart';
-import 'package:flutter_boilerplate/providers/base_provider.dart';
-import 'package:flutter_boilerplate/routes.dart';
-import 'package:flutter_boilerplate/services/locator.dart';
-import 'package:flutter_boilerplate/services/shared_pref/shared_pref.dart';
-import 'package:flutter_boilerplate/utils/error_capture.dart';
-import 'package:flutter_boilerplate/utils/translation.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:sentry/sentry.dart';
 
 import 'constants/app_theme.dart';
 import 'constants/strings.dart';
+import 'pages/home/home_page.dart';
+import 'providers/base_provider.dart';
+import 'routes.dart';
+import 'services/locator.dart';
+import 'services/shared_pref/shared_pref.dart';
+import 'utils/error_capture.dart';
+import 'utils/translation.dart';
+
+
 
 final SentryClient _sentry = SentryClient(dsn: Strings.dnsSentry);
 

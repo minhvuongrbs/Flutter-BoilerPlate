@@ -12,7 +12,7 @@ class AppLoader extends StatelessWidget {
           children: <Widget>[
             Image.asset(Images.logo),
             SizedBox(
-              child: new CircularProgressIndicator(),
+              child: CircularProgressIndicator(),
               height: 80.0,
               width: 80.0,
             )

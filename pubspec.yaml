@@ -38,6 +38,7 @@ dev_dependencies:
     sdk: flutter
   build_runner: ^1.0.0
   json_serializable: ^3.2.0
+  effective_dart: ^1.2.0
 
 flutter:
   uses-material-design: true
